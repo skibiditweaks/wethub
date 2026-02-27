@@ -65,7 +65,7 @@ stealTitle.Parent = hubFrame
 local instaBtn = Instance.new("TextButton")
 instaBtn.Size = UDim2.new(0, 380, 0, 45) -- Wider Buttons
 instaBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-instaBtn.Text = "Insta-Steal"
+instaBtn.Text = "Semi Instant Steal (Need Carpet) (Not Mine)"
 instaBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 instaBtn.Font = Enum.Font.GothamBold
 instaBtn.TextSize = 15
@@ -178,7 +178,8 @@ end
 
 -- Button Triggers
 instaBtn.MouseButton1Click:Connect(function()
-    print("Insta-Steal Activated")
+    hubFrame:Destroy()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tokinu/Semi-TP/refs/heads/main/Free"))()
 end)
 
 afkBtn.MouseButton1Click:Connect(function()
